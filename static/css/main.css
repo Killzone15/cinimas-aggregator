@@ -1,0 +1,218 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+    /*WATCHER LOGO*/
+
+.main-logo{
+    font-size: 100px;
+    font-family: arial,sans-serif;
+    color: #202124;
+    height: 100%;
+    font-weight: bold;
+    max-height: 90px;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+    /* SEARCH */
+
+.search-container {
+
+    height: 46px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    display: flex;
+    z-index: 3;
+    position: relative;
+    min-height: 44px;
+    border-radius: 48px;
+    margin: 0 auto;
+    width: 600px;
+    padding: 10px;
+    border: 1px solid #dfe1e5;
+}
+
+.search-bar {
+    padding: 10px 10px 10px 50px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    background: #fff url('/static/icons/seach_icon.svg') no-repeat 10px center;
+    background-size: 24px;
+}
+
+.search-bar:focus{
+    outline:none;
+}
+
+    /* button FIND */
+
+#searchButton {
+    position: inherit;
+    z-index: 1001;
+    height: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: none;
+    border-radius: 46px;
+    color: #000;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 900;
+    padding: 0 1rem;
+    border: 0.5px solid transparent; /* Убираем контур */
+    transition: box-shadow 0.1s ease; /* Добавляем анимацию изменения тени */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Легкая тень при наведении */
+}
+
+#searchButton:active {
+    background: #ffcc00;
+}
+#searchButton:hover {
+    background: #ffcc00;
+}
+
+.search-clean-button{
+    color: var(--color-g-text-tertiary);
+    margin-right: 10px;
+    cursor: pointer;
+    transition: color .15s ease-out;
+}
+.search-clean-button:hover {
+    fill: #ffcc00; /* Укажите желаемый цвет при наведении */
+    box-shadow: black;
+  }
+
+    /*INPUT*/
+
+.search-container:hover {
+    border: 0.5px solid transparent; /* Убираем контур */
+    transition: box-shadow 0.1s ease; /* Добавляем анимацию изменения тени */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Легкая тень при наведении */
+}
+
+.search-container:focus {
+    border: 0.5px solid transparent; /* Убираем контур */
+    transition: box-shadow 0.1s ease; /* Добавляем анимацию изменения тени */
+    outline: none; /* Убираем стандартный контур при фокусе */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Легкая тень при фокусе */
+}
+
+
+    /*ANIMATION LOADING*/
+
+.loading-spinner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+    /* FOOTER */
+
+.footer {
+    right: 0;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-text {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.ivi-line-logo{
+    width: 6%;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+.kinopoisk-line-logo{
+    width: 15%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.premier-line-logo{
+    width: 15%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.okko-line-logo{
+    width: 7%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+    /* PHONE */
+
+@media (max-width: 600px) {
+
+    .search-container {
+        width:80%;
+        padding: 10px;
+    }
+
+    .main-logo{
+        font-size: 50px;
+        font-family: arial,sans-serif;
+        color: #202124;
+        height: 100%;
+        font-weight: bold;
+        max-height: 92px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .footer{
+        margin-bottom: 20px;
+    }
+
+    .footer-text {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+    }
+
+    .ivi-line-logo{
+        width: 13%;
+
+    }
+
+    .kinopoisk-line-logo{
+        width: 25%;
+
+    }
+
+    .premier-line-logo{
+        width: 30%;
+       margin-top: 20px;
+    }
+
+    .okko-line-logo{
+        width: 15%;
+
+    }
+
+}

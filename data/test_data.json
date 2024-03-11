@@ -1,0 +1,64 @@
+{
+    "blocks": [
+        {
+            "theater_icon": "test_icon1.png",
+            "content_title": "novichok",
+            "content_poster": "data/novichok.png",
+            "content_rating": "test_rating1",
+            "content_seasons_num": "seasons_num",
+            "content_locals": "local1, local2, local3",
+            "content_subtitles": "sub1, sub2",
+            "content_country": "USA"
+        },
+        {
+            "theater_icon": "test_icon1.png",
+            "content_title": "test",
+            "content_poster": "data/novichok.png",
+            "content_rating": "test_rating1",
+            "content_seasons_num": "seasons_num",
+            "content_locals": "local1, local2, local3",
+            "content_subtitles": "sub1, sub2",
+            "content_country": "USA"
+        },
+        {
+            "theater_icon": "test_icon1.png",
+            "content_title": "test2",
+            "content_poster": "data/novichok.png",
+            "content_rating": "test_rating1",
+            "content_seasons_num": "seasons_num",
+            "content_locals": "local1, local2, local3",
+            "content_subtitles": "sub1, sub2",
+            "content_country": "USA"
+        },
+        {
+            "theater_icon": "test_icon1.png",
+            "content_title": "test2",
+            "content_poster": "data/novichok.png",
+            "content_rating": "test_rating1",
+            "content_seasons_num": "seasons_num",
+            "content_locals": "local1, local2, local3",
+            "content_subtitles": "sub1, sub2",
+            "content_country": "USA"
+        },
+        {
+            "theater_icon": "test_icon1.png",
+            "content_title": "test3",
+            "content_poster": "data/novichok.png",
+            "content_rating": "test_rating1",
+            "content_seasons_num": "seasons_num",
+            "content_locals": "local1, local2, local3",
+            "content_subtitles": "sub1, sub2",
+            "content_country": "USA"
+        },
+        {
+            "theater_icon": "test_icon1.png",
+            "content_title": "friends",
+            "content_poster": "data/novichok.png",
+            "content_rating": "test_rating1",
+            "content_seasons_num": "seasons_num",
+            "content_locals": "local1, local2, local3",
+            "content_subtitles": "sub1, sub2",
+            "content_country": "USA"
+        }
+    ]
+}

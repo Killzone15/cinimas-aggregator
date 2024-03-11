@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movie Recommendation</title>
+        <link rel="stylesheet" href="static/css/recommend.css">
+        <link rel="stylesheet" href="static/css/common.css">
+    </head>
+<body>
+
+    <div class="top-menu">
+        <a href="/">Рекомендации</a>
+        <a href="/search">Поиск</a>
+    </div>
+
+    <div class="main-container">
+
+        <div class="link-container">
+            <p class="offer_text">Я хочу посоветовать...</p>
+
+            <div class="link-input-container">
+                <label for="content-link">Ссылка на фильм:</label>
+                <input type="text" id="content-link" class="input-field">
+            </div>
+        </div>
+
+        <div class="content-info-container">
+            <div class="image-container">
+                <img id="content-image" src="/static/placeholders/placeholder_poster.jpg" alt="img">
+            </div>
+
+            <div class="description-container">
+                <div class="title-container">
+                    <label for="content-title">Название:</label>
+                    <input type="text" id="content-title" class="input-field">
+                </div>
+
+                <div class="description-container">
+                    <label for="content-description">Описание:</label>
+                    <textarea class="long-input-field" cols="30" rows="10" id="content-description"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <button id="share-button">Поделиться</button>
+
+        <div class="materials-container">
+            <label for="add_materials">Добавить видео или скриншоты:</label>
+            <button id="add_materials">+</button>
+        </div>
+        <div id="new_materials"></div>
+
+    </div>
+
+<script src="/scripts/recommend.js"></script> <!-- Include your JavaScript file -->
+</body>
+</html>

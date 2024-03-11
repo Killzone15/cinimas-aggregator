@@ -1,0 +1,186 @@
+/* styles.css */
+
+/* Define a grid layout for the block container with increased gap */
+#block-container {
+    margin-top: 62px; /* Adjust the margin-top value as needed */
+    margin-bottom: 62px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 55px; /* Increased spacing between blocks */
+}
+
+/* Make blocks thinner */
+.block {
+    flex: 1;
+    border: 1px solid #808080;
+    border-radius: 24px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    max-width: 300px; /* Adjust the maximum width as needed */
+    width: 100%; /* Take up the available width within the grid column */
+    color: #ffffff;
+    position: relative; /* Added relative positioning for child elements */
+}
+
+.logo {
+    width: 100%; /* Make logo width 100% of its container */
+    height: auto; /* Allow logo height to adjust proportionally */
+    margin-bottom: 10px;
+}
+
+
+/*Information after content-name*/
+.content-info {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    min-height: 50px; /* Adjust the minimum height as needed */
+}
+
+#info {
+    font-weight: 400;
+    margin-top: 2px;
+    align-items: left;
+}
+
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.9px;
+    text-align: center;
+}
+
+.seasons-container{
+    margin-top: 5px;
+}
+
+.seasons-square{
+    background-color:#73a32f;
+    border-radius: 2px;
+    padding: 2px;
+    margin-right: 2px;
+}
+
+.remaining-square {
+    background-color: red;
+}
+
+/*watch_button design*/
+.link {
+    text-decoration: none;
+    height: 37px;
+    width: 250px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px; /* Размер шрифта текста ссылки */
+    letter-spacing: normal;
+    align-self: stretch; /* Align link to stretch the entire height of the block */
+}
+
+/*IVI design*/
+
+div[theatre="ivi"] {
+    background-color:rgba(28, 25, 45, 1);  
+}
+
+
+div[theatre='ivi'] .link {
+    background-color: #de0e44;
+    text-align: center; /* Центрирование текста по горизонтали */
+    line-height: 37px; /* Выравнивание текста по вертикали посередине кнопки */
+    color: #fff; /* Цвет текста */
+}
+
+div[theatre='ivi'] .logo {  
+    background: url('/static/logos/ivi_logo.svg') no-repeat ;
+    width: 56px;
+    height: 41px;
+    margin-bottom: 10px;
+}
+
+/*Kinopoisk design*/
+
+div[theatre='kinopoisk']{
+    background-color: #141414;
+}
+
+div[theatre='kinopoisk'] .logo{
+    background: url('/static/logos/kinopoisk_logo.svg') no-repeat ;
+    width: 136px;
+    height: 33px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div[theatre='kinopoisk'] .link {
+    background-color: #FF5500;
+    text-align: center; /* Центрирование текста по горизонтали */
+    line-height: 37px; /* Выравнивание текста по вертикали посередине кнопки */
+    color: #fff; /* Цвет текста */
+   
+}
+
+/*Okko design*/
+
+div[theatre='okko']{
+    background-color: black;
+}
+
+div[theatre='okko'] .logo{   
+    background: url('/static/logos/okko_logo.svg') no-repeat ;
+    width: 95px;
+    height: 34px;
+    margin-top: 10px;
+    margin-bottom: 10px;    
+}
+
+div[theatre='okko'] .link {
+    background: linear-gradient(#5d0ef5 0 0) content-box, linear-gradient(#a076f6 0 0);
+    text-align: center; /* Центрирование текста по горизонтали */
+    line-height: 37px; /* Выравнивание текста по вертикали посередине кнопки */
+    color: #fff; /* Цвет текста */
+}
+
+/* PREMIER design*/
+
+div[theatre='premier']{
+    background-color: #141414;
+}
+
+div[theatre='premier'] .logo{
+    background: url('/static/logos/premier_logo.svg') no-repeat ;
+    width: 141px;
+    height: 34px;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+
+div[theatre='premier'] .link {
+    background: #facc6d;
+    text-align: center; /* Центрирование текста по горизонтали */
+    line-height: 37px; /* Выравнивание текста по вертикали посередине кнопки */
+    color: black; /* Цвет текста */
+    font-weight: 500; /* Жирное начертание текста, если нужно */
+}
+
+@media only screen and (max-width: 600px) {
+    #block-container {
+        grid-template-columns: 1fr; /* Один столбец на узких экранах */
+        margin-top: 40px; /* Уменьшенный верхний отступ */
+        gap: 40px;
+        place-items: center; 
+    }
+
+    .block {
+    min-width: 100%;
+   
+    }
+   
+}

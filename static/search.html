@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watcher</title>
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/blocks.css">
+    <link rel="stylesheet" href="static/css/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="top-menu">
+        <a href="/">Рекомендации</a>
+        <a href="/search">Поиск</a>
+    </div>
+
+    <div class="logo-block">
+        <p class="main-logo">WATCHER</p>
+    </div>
+    <div class="search-container">
+        <input class="search-bar" type="text" id="search-bar" placeholder="Фильм, сериал, мультфильм, аниме...">
+        <svg id="searchCleanButton" class="search-clean-button" focusable="false" style="display: none;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        <button id="searchButton" type="submit" style="display: none;" tabindex="-1">Найти</button>
+    </div>
+    <div id="loading-spinner" class="loading-spinner">Ищем где посмотреть...</div>
+    <div id="block-container"></div>
+    <script src="/scripts/generateBlock.js"></script>
+    <script src="/scripts/requestSearchIVI.js"></script>
+    <script src="/scripts/requestSearchOKKO.js"></script>
+    <script src="/scripts/requestSearchKP.js"></script>
+    <script src="/scripts/requestSearchPREMIER.js"></script>
+    <script src="/scripts/searchStart.js"></script>
+    <footer class="footer">
+        <p class="footer-text">Поддерживаемые онлайн-кинотеатры</p>      
+        <img class="ivi-line-logo" alt="ivi" src="static/logos/line_style_logos/ivi_line_style_logo.svg">
+        <img class="okko-line-logo" alt="okko" src="static/logos/line_style_logos/okko_line_style_logo.svg">
+        <img class="kinopoisk-line-logo" alt="kinopoisk" src="static/logos/line_style_logos/kinopoisk_line_style_logo.svg">
+        <img class="premier-line-logo" alt="premier" src="static/logos/line_style_logos/premier_line_style_logo.svg">   
+    </footer>
+</body>
+</html>
