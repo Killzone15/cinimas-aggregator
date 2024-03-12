@@ -12,6 +12,11 @@ body {
 
     /*WATCHER LOGO*/
 
+.logo-block {
+    display: flex;
+    justify-content: center;
+}
+
 .main-logo{
     font-size: 100px;
     font-family: arial,sans-serif;
