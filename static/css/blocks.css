@@ -4,6 +4,8 @@
 #block-container {
     margin-top: 62px; /* Adjust the margin-top value as needed */
     margin-bottom: 62px;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three columns */
     gap: 55px; /* Increased spacing between blocks */
